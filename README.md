@@ -3,6 +3,16 @@
 Team members: Tianjie Zhang, Donglei Wang, Yang Lu
 
 
+How to run:
+1. run the 
+
+```
+python 
+```
+
+
+
+
 
 
 
