@@ -3,6 +3,8 @@
 **Team members:**  Tianjie Zhang, Donglei Wang, Yang Lu
 
 
+### 🚗Task 1
+
 **How to run:**
 1. open the terminal and go to your file folder:
 
@@ -22,6 +24,8 @@ python train_dsps.py --data data/dsps.yaml --epochs 400 --weights yolov5s.pt --c
 python detect_dsps.py --weights 'your_trained .pt file path' --source test_data --conf-thres 0.65 --iou-thres 0.999 --augment
 ```
 
+*Other way:* run the DSPS_task1.ipynb directly.
+
 **Strategy used:**
 
 1. Using wGAN to generate real-like images;
@@ -30,6 +34,8 @@ python detect_dsps.py --weights 'your_trained .pt file path' --source test_data 
 4. Fine tune of the hyperparameters: 
 training: epochs = 400, batch_size = 16, hyp = hyp.scatch-med.yaml
 testing: conf-thres = 0.65, iou-thres = 0.999, augment = true
+
+### 🚓Task 2
 
 
 
