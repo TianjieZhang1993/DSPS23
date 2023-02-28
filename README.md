@@ -57,7 +57,11 @@ python train_dsps.py --data data/dsps2.yaml --epochs 400 --weights yolov5s.pt --
 python detect_dsps2.py --weights runs/train/exp10/weights/best.pt --source images/ --conf-thres 0.65 --iou-thres 0.999 --augment  
 ```
 
-*Other way:* run the DSPS_task1.ipynb directly.
+*Other way:* run the DSPS_task2.ipynb directly.
+
+**Strategy used:**
+
+Attention module modified the yolov5
 
 
 
