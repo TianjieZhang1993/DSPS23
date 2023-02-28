@@ -2,6 +2,8 @@
 
 **Team members:**  Tianjie Zhang, Donglei Wang, Yang Lu
 
+**Email:** tjzhang@u.boisestate.edu
+
 
 ### 🚗Task 1
 
