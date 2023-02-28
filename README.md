@@ -6,7 +6,9 @@
 ### 🚗Task 1
 
 **How to run:**
+
 0. Download this repository and put it in your tutorial file folder.
+
 1. open the terminal and go to your file folder:
 
 ```
