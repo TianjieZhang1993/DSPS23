@@ -1,9 +1,9 @@
 ## Team: Broncos <img align="right" src="https://user-images.githubusercontent.com/95270677/221381417-168eae3f-0cab-4c93-bdad-7d692ec511f3.png">
 
-Team members: Tianjie Zhang, Donglei Wang, Yang Lu
+**Team members:**  Tianjie Zhang, Donglei Wang, Yang Lu
 
 
-How to run:
+**How to run:**
 1. open the terminal and go to your file folder:
 
 ```
@@ -22,8 +22,19 @@ python train_dsps.py --data data/dsps.yaml --epochs 400 --weights yolov5s.pt --c
 python detect_dsps.py --weights 'your_trained .pt file path' --source test_data --conf-thres 0.65 --iou-thres 0.999 --augment
 ```
 
+**Strategy used:**
 
-Links: 
+1. Using wGAN to generate real-like images;
+2. using random crop, flip and contrast adjusting to augment the images;
+3. A feature-balanced strategy: try to make the amount of different defects equal'
+4. Fine tune of the hyperparameters: 
+training: epochs = 400, batch_size = 16, hyp = hyp.scatch-med.yaml
+testing: conf-thres = 0.65, iou-thres = 0.999, augment = true
+
+
+
+
+**Links:**
 - https://dsps-1e998.web.app/
 - https://github.com/UM-Titan/DSPS23
 
