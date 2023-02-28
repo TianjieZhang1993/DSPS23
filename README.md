@@ -6,6 +6,7 @@
 ### 🚗Task 1
 
 **How to run:**
+0. Download this repository and put it in your tutorial file folder.
 1. open the terminal and go to your file folder:
 
 ```
@@ -36,6 +37,31 @@ training: epochs = 400, batch_size = 16, hyp = hyp.scatch-med.yaml
 testing: conf-thres = 0.65, iou-thres = 0.999, augment = true
 
 ### 🚓Task 2
+
+**How to run:**
+1. open the terminal and go to your file folder:
+
+```
+cd 'your_path'
+```
+
+2. Run the following code to train the mdoel. 
+
+```
+python train_dsps.py --data data/dsps2.yaml --epochs 400 --weights yolov5s.pt --cfg yolov5l_simAM.yaml  --batch-size 16 --hyp data/hyps/hyp.scratch-med.yaml
+```
+
+3. After training, run the detec.py to test the result.
+
+```
+python detect_dsps2.py --weights runs/train/exp10/weights/best.pt --source images/ --conf-thres 0.65 --iou-thres 0.999 --augment  
+```
+
+*Other way:* run the DSPS_task2.ipynb directly.
+
+**Strategy used:**
+
+Attention module modified the yolov5
 
 
 
