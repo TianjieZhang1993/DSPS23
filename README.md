@@ -68,7 +68,7 @@ python detect_dsps2.py --weights runs/train/exp10/weights/best.pt --source image
 
 **Strategy used:**
 
-Attention module modified the yolov5
+A sinAM Attention module was used to modify the yolov5l model.
 
 
 ---
