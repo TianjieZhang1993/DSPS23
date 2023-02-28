@@ -28,6 +28,8 @@ python detect_dsps.py --weights 'your_trained .pt file path' --source test_data 
 2. using random crop, flip and contrast adjusting to augment the images;
 3. A feature-balanced strategy: try to make the amount of different defects equal'
 4. Fine tune of the hyperparameters: 
+training: epochs = 400, batch_size = 16, hyp = hyp.scatch-med.yaml
+testing: conf-thres = 0.65, iou-thres = 0.999, augment = true
 
 
 
