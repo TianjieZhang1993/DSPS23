@@ -36,6 +36,9 @@ python detect_dsps.py --weights 'your_trained .pt file path' --source test_data 
 training: epochs = 400, batch_size = 16, hyp = hyp.scatch-med.yaml
 testing: conf-thres = 0.65, iou-thres = 0.999, augment = true
 
+---
+
+
 ### 🚓Task 2
 
 **How to run:**
@@ -64,6 +67,7 @@ python detect_dsps2.py --weights runs/train/exp10/weights/best.pt --source image
 Attention module modified the yolov5
 
 
+---
 
 
 **Links:**
