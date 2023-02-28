@@ -3,6 +3,8 @@
 **Team members:**  Tianjie Zhang, Donglei Wang, Yang Lu
 
 
+### 🚗Task 1
+
 **How to run:**
 1. open the terminal and go to your file folder:
 
@@ -30,6 +32,8 @@ python detect_dsps.py --weights 'your_trained .pt file path' --source test_data 
 4. Fine tune of the hyperparameters: 
 training: epochs = 400, batch_size = 16, hyp = hyp.scatch-med.yaml
 testing: conf-thres = 0.65, iou-thres = 0.999, augment = true
+
+### 🚓Task 2
 
 
 
