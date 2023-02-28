@@ -4,18 +4,23 @@ Team members: Tianjie Zhang, Donglei Wang, Yang Lu
 
 
 How to run:
-1. run the 
+1. open the terminal and go to your file folder:
 
 ```
-python 
+cd 'your_path'
 ```
 
+2. Run the following code to train the mdoel. 
 
+```
+python train_dsps.py --data data/dsps.yaml --epochs 400 --weights yolov5s.pt --cfg yolov5s.yaml  --batch-size 16 --hyp data/hyps/hyp.scratch-med.yaml
+```
 
+3. After training, run the detec.py to test the result.
 
-
-
-
+```
+python detect_dsps.py --weights 'your_trained .pt file path' --source test_data --conf-thres 0.65 --iou-thres 0.999 --augment
+```
 
 
 Links: 
